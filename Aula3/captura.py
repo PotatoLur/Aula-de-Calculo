@@ -14,7 +14,6 @@ def datetime(segundos):
         else:
             tempo += str(math.floor(segundos/60)) + ':'
     tempo += str(math.floor(segundos%3600%60))
-
     return tempo
 
 cpu = psutil.cpu_times(percpu = False)
