@@ -11,7 +11,7 @@ dados = {
 }
 
 i = 0
-while i < 3:
+while i < 10:
     dataTempo = datetime.datetime.now()
     cpu = psutil.cpu_percent(percpu = False)
     ram = psutil.virtual_memory()
@@ -27,4 +27,4 @@ while i < 3:
 
 df = pd.DataFrame(dados)
 
-df.to_csv("coleta-dos-dados", encoding="utf-8", index=False)
+df.to_csv("coleta-dos-dados.csv", encoding="utf-8", index=False)
