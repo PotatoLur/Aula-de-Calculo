@@ -9,3 +9,14 @@ cor(dfoo$peso, dfoo$idade)
 regressao <- lm(dfoo$idade ~ dfoo$peso)
 plot(dfoo$peso, dfoo$idade)
 abline(regressao)
+
+
+cor(dfoo$peso, dfoo$altura)
+regressao <- lm(dfoo$altura ~ dfoo$peso)
+plot(dfoo$peso, dfoo$altura)
+abline(regressao)
+
+cor(dfoo$idade, dfoo$altura)
+regressao <- lm(dfoo$altura ~ dfoo$idade)
+plot(dfoo$idade, dfoo$altura)
+abline(regressao)
